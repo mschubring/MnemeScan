@@ -3,6 +3,7 @@
 .idea/
 app/build/
 build/
+gradle/
 
 # files #
 gradlew
