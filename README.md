@@ -1,29 +1,30 @@
 # MnemeScan
-first of all it is an trainings project of mine.
-primary function should be to scan periodicaly wireless networks in range,
-temporary store then and hand them of to an other service for further processing.
+first of all it is an trainings-project.
+primary function should be to scan periodically wireless networks in range,
+temporary store and hand them to another service for further processing.
 
 # motivation
-for an nother project of mine I do need data to playing around with some "larger" amount of data
-... I just need some data! for playtime :-)
-all day long I carry my mobile phone time to get adantage out of it
+for another project of mine, I do need data to play around with some "larger" amount of data
+all day long I do carry my mobile phone time to get some advantage out of it!
+
+... naaahh what ever, I just need some data! for playtime :-)
 
 # features
-* scan and store periodicaly all available wireless networks in range
+* scan and store periodically all available wireless networks in range
  * with date /time
  * with SSID
  * with MAC address(?)
  * with type of used securrety (open, WEP, WPA, WPA2)
  * with signal strengh
  * with GPS data
-* transfere via REST-APT to other service for further processing
+* transfer via REST-APT to another service for further processing
 
 # dependancies
 * degger2
 * ...
 
 # compile and use
-**FIXME** - extend build and use commands
+**FIXME**
 ´´´
 gradle build
 ´´´
