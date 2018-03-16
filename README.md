@@ -1,17 +1,18 @@
 # MnemeScan
-first of all it is an trainings project of mine.
-primary function should be to scan <s>periodically</s> wireless networks in range,
-temporary store then and hand them of to an other service for further processing.
+first of all it is an trainings-project.
+primary function should be to scan periodically wireless networks in range,
+temporary store and hand them to another service for further processing.
 
 # motivation
-for an nother project of mine I do need data to playing around with some "larger" amount of data
-... I just need some data! for playtime :-)
-all day long I carry my mobile phone time to get adantage out of it
+for another project of mine, I do need data to play around with some "larger" amount of data
+all day long I do carry my mobile phone time to get some advantage out of it!
+
+... naaahh what ever, I just need some data! for playtime :-)
 
 # features
 ## done
-* scan <s>periodically</s> all available wireless networks in range
-* store scanned data (date/time , SSID , MAC , securrety (open, WEP, WPA, WPA2) , signal strength , GPS data ... )
+* scan periodically all available wireless networks in range
+* store scanned data (date/time , SSID , MAC , securrety (open, WEP, WPA, WPA2, aso.) , signal strength , GPS data ... )
 * transfere via REST-APT to other service for further processing
 
 ## open (prio top to bottom)
