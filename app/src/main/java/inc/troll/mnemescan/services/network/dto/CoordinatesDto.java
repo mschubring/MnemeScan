@@ -31,7 +31,7 @@ public class CoordinatesDto {
 		this.id = coordinates.getId();
 		this.createdAt = coordinates.getCreatedAt();
 		this.lastUpdate = coordinates.getLastUpdate();
-		this.macAddress = coordinates.getCreatedAt();
+		this.macAddress = coordinates.getMacAddress();
 		this.signalStrength = coordinates.getSignalStrength();
 		this.latitude = coordinates.getLatitude();
 		this.longitude = coordinates.getLongitude();
