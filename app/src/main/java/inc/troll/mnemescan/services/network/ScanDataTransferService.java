@@ -71,7 +71,7 @@ public class ScanDataTransferService {
 			ids.add(network.getId());
 		}
 
-		Response response = sendJson("POST","http://pi.home.lan:4567/networks", networkDtoList);
+		Response response = sendJson("POST","http://pi.home.lan:4567/network", networkDtoList);
 
 		// change status of success full transferred entries
 		if(response.isSuccessful()) {
@@ -94,7 +94,7 @@ public class ScanDataTransferService {
 			ids.add(network.getId());
 		}
 
-		Response response = sendJson("PUT","http://pi.home.lan:4567/networks", networkDtoList);
+		Response response = sendJson("PUT","http://pi.home.lan:4567/network", networkDtoList);
 
 		// change status of success full transferred entries
 		if(response.isSuccessful()) {
