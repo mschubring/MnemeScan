@@ -71,7 +71,7 @@ public class ScanDataTransferService {
 			ids.add(network.getId());
 		}
 
-		Response response = postJson("http://pi.home.lan:4567/networks", networkDtoList);
+		Response response = sendJson("POST","http://pi.home.lan:4567/networks", networkDtoList);
 
 		// change status of success full transferred entries
 		if(response.isSuccessful()) {
@@ -94,7 +94,7 @@ public class ScanDataTransferService {
 			ids.add(network.getId());
 		}
 
-		Response response = postJson("http://pi.home.lan:4567/networks", networkDtoList);
+		Response response = sendJson("PUT","http://pi.home.lan:4567/networks", networkDtoList);
 
 		// change status of success full transferred entries
 		if(response.isSuccessful()) {
@@ -117,7 +117,7 @@ public class ScanDataTransferService {
 			ids.add(coordinates.getId());
 		}
 
-		Response response = postJson("http://pi.home.lan:4567/coordinates", coordinatesDtoList);
+		Response response = sendJson("POST","http://pi.home.lan:4567/coordinates", coordinatesDtoList);
 
 		// change status of success full transferred entries
 		if(response.isSuccessful()) {
@@ -129,13 +129,13 @@ public class ScanDataTransferService {
 		}
 	}
 
-	private Response postJson(String url, Object data) throws IOException {
+	private Response sendJson(String method, String url, Object data) throws IOException {
 		MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 
 		RequestBody body = RequestBody.create(JSON, gson.toJson(data));
 		Request request = new Request.Builder()
 				.url(url)
-				.post(body)
+				.method(method, body)
 				.build();
 
 		return okHttpClient.newCall(request).execute();
