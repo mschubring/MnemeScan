@@ -80,6 +80,7 @@ public class ScanDataTransferService {
 			// TODO improve error behavior
 			System.out.println("ERROR: could not transfer new networks");
 			System.out.println(response.message());
+			System.out.println(response.body().string());
 		}
 	}
 
@@ -101,8 +102,9 @@ public class ScanDataTransferService {
 			wirelessNetworkRepository.markAsTransferred(ids);
 		} else {
 			// TODO improve error behavior
-			System.out.println("ERROR: could not transfer new networks");
+			System.out.println("ERROR: could not update networks");
 			System.out.println(response.message());
+			System.out.println(response.body().string());
 		}
 	}
 
@@ -126,6 +128,7 @@ public class ScanDataTransferService {
 			// TODO improve error behavior
 			System.out.println("ERROR: could not transfer new coorinates");
 			System.out.println(response.message());
+			System.out.println(response.body().string());
 		}
 	}
 
