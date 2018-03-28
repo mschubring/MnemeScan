@@ -30,7 +30,7 @@ all day long I do carry my mobile phone time to get some advantage out of it!
 * changeable configuration
  * url and port of processing service
  * define/select home network
-* think of sync data back from processing service - needed in case of "ups I deleted the app!!!"
+* data import / export / backup
 * https instead of http
 * activity logging (?)
 * authentication (?)
